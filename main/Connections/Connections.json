@@ -1,0 +1,131 @@
+{
+  "5bf6f602-ad5a-4f55-b740-b73927eb8901": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_powerappsforappmakers/connections/8bed627046c34299bfeacb187204f65a",
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "适用于制作者的 Power Apps",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1551/1.0.1551.2693/powerappsforappmakers/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_powerappsforappmakers",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "适用于制作者的PowerApps"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "5bf6f602-ad5a-4f55-b740-b73927eb8901"
+  },
+  "734cec5f-77a5-4293-b12c-f31f71c7bb5f": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/2fa5a97b764d468d877b95b691098bc8",
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1550/1.0.1550.2686/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://chinasofti0.sharepoint.com/sites/eProcessingSystemEPS": {
+        "dataSources": {
+          "VacationApprovalForm": {
+            "tableName": "63cc9f38-11d4-4f2b-a555-99d34fab5ac8"
+          }
+        }
+      },
+      "https://chinasofti0.sharepoint.com/sites/HKELC": {
+        "dataSources": {
+          "JobApplication": {
+            "tableName": "87899153-764d-444d-b2ff-2615c3d9100c"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "JobApplication",
+      "VacationApprovalForm"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "734cec5f-77a5-4293-b12c-f31f71c7bb5f"
+  },
+  "76e475ec-74ae-423b-bd9c-fcd304a64977": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_powerappsforadmins/connections/e00d2ed7a10f438e9d47604f10fe85fa",
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Power Apps for Admins",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1544/1.0.1544.2640/powerappsforadmins/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_powerappsforadmins",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "PowerAppsforAdmins"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "76e475ec-74ae-423b-bd9c-fcd304a64977"
+  },
+  "7e718ee1-a54b-4a58-b143-e715a30d24ba": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_office365groups/connections/3a1ea675892047febf4647f21f48589e",
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 组",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1538/1.0.1538.2619/office365groups/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365groups",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365组"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "7e718ee1-a54b-4a58-b143-e715a30d24ba"
+  },
+  "bcab6d34-3c64-4f94-857f-c560f1c8cd96": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/a2d4fe964d254b1dbdb51f82a7a06855",
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1550/1.0.1550.2686/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://chinasofti0.sharepoint.com/sites/SchneiderProject": {
+        "dataSources": {
+          "FactoryGradegGroupList": {
+            "tableName": "43ecdf52-7b47-4022-b74c-7e064cce6810"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "FactoryGradegGroupList"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "bcab6d34-3c64-4f94-857f-c560f1c8cd96"
+  }
+}

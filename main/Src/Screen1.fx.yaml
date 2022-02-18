@@ -1,0 +1,44 @@
+Screen1 As screen:
+    OnVisible: =ClearCollect(DataList,Sequence(1000))
+
+    Label14 As label:
+        Height: =70
+        Size: =21
+        Text: =diffetime
+        Width: =560
+        X: =40
+        Y: =40
+        ZIndex: =1
+
+    Button6 As button:
+        Height: =70
+        OnSelect: |-
+            =Set(startTime,Now());
+            Collect(newdata,DataList);
+            Set(diffetime,DateDiff(Now(),startTime,Milliseconds))
+        Size: =24
+        Text: ="加载集合"
+        Width: =280
+        X: =180
+        Y: =312
+        ZIndex: =2
+
+    Label15 As label:
+        Height: =70
+        Size: =21
+        Text: =CountRows(newdata)
+        Width: =560
+        X: =40
+        Y: =449
+        ZIndex: =3
+
+    Button8 As button:
+        Height: =70
+        OnSelect: =ClearCollect(DataList,Sequence(1000))
+        Size: =24
+        Text: ="初始化集合"
+        Width: =280
+        X: =180
+        Y: =176
+        ZIndex: =4
+

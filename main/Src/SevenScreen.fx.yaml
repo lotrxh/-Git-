@@ -1,0 +1,81 @@
+SevenScreen As screen:
+    OnVisible: |
+        =Set(taskid,0);
+        ClearCollect(
+            TempCol,
+            ShowColumns(
+                Table(Defaults(VacationApprovalForm)),
+                "field_Application_No",
+                "Title"
+            )
+        );
+        Clear(TempCol);
+        Patch(TempCol,Defaults(TempCol),{field_Application_No:Text(taskid)})
+
+    "Gallery4_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Height: =710
+        Items: |-
+            =//VacationApprovalForm
+            TempCol
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =85
+        Width: =628
+        X: =12
+        Y: =40
+        ZIndex: =1
+
+        Separator3_1 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+        Label12_1 As label:
+            Height: =61
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: =ThisItem.field_Application_No
+            Width: =45
+            X: =19
+            ZIndex: =6
+
+        TextInput1_2 As text:
+            Default: =ThisItem.Title
+            Height: =41
+            OnChange: |-
+                =UpdateIf(
+                    TempCol,
+                    field_Application_No=ThisItem.field_Application_No,
+                    {Title:TextInput1_2.Text}
+                )
+            Size: =21
+            Width: =337
+            X: =212
+            Y: =20
+            ZIndex: =8
+
+    btnNew As button:
+        Height: =70
+        OnSelect: |-
+            =Set(taskid,taskid+1);
+            Patch(TempCol,Defaults(TempCol),{field_Application_No:taskid,Title:""})
+             //Patch(VacationApprovalForm,Defaults(VacationApprovalForm),{Title:taskid+1})
+        Size: =24
+        Text: ="按钮"
+        Width: =280
+        X: =344
+        Y: =996
+        ZIndex: =2
+
+    Button5 As button:
+        Height: =70
+        OnSelect: =Clear(TempCol)
+        Size: =24
+        Text: ="Del"
+        Width: =280
+        X: =31
+        Y: =996
+        ZIndex: =3
+

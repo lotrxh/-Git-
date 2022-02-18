@@ -1,0 +1,122 @@
+FiveScreen As screen:
+
+    Container1 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =757
+        LayoutMode: =LayoutMode.Auto
+        LayoutOverflowX: =LayoutOverflow.Scroll
+        Y: =279
+        ZIndex: =1
+
+        Container2 As groupContainer.manualLayoutContainer:
+            Height: =225
+            LayoutMinHeight: =60
+            LayoutMinWidth: =Gallery3.Width
+            ZIndex: =1
+
+            "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+                Height: =479
+                Items: =CustomGallerySample
+                Layout: =Layout.Vertical
+                TemplatePadding: =0
+                TemplateSize: =Min(160, Self.Height - 60)
+                Width: =592
+                Y: =114
+                ZIndex: =1
+
+                Title1 As label:
+                    Height: =36
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =ThisItem.SampleHeading
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =214
+                    X: =
+                    Y: =44
+                    ZIndex: =2
+
+                Subtitle1 As label:
+                    Height: =36
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =ThisItem.SampleText
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =228
+                    X: =214
+                    Y: =57
+                    ZIndex: =3
+
+                NextArrow1 As icon.ChevronRight:
+                    AccessibleLabel: =Self.Tooltip
+                    Height: =60
+                    Icon: =Icon.ChevronRight
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =10
+                    PaddingLeft: =10
+                    PaddingRight: =10
+                    PaddingTop: =10
+                    TabIndex: =0
+                    Tooltip: ="View item details"
+                    Width: =60
+                    X: =Parent.TemplateWidth - Self.Width - 5
+                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                    ZIndex: =4
+
+                Separator1 As rectangle:
+                    Height: =1
+                    OnSelect: =Select(Parent)
+                    Width: =Parent.TemplateWidth
+                    Y: =Parent.TemplateHeight - 1
+                    ZIndex: =5
+
+                Label7 As label:
+                    Height: =70
+                    OnSelect: =Select(Parent)
+                    Size: =21
+                    Text: =ThisItem.SampleText
+                    Width: =152
+                    X: =442
+                    Y: =40
+                    ZIndex: =6
+
+            Label8 As label:
+                Height: =58
+                Size: =21
+                Text: ="Text"
+                Width: =118
+                X: =28
+                Y: =32
+                ZIndex: =2
+
+            Label9 As label:
+                Height: =70
+                Size: =21
+                Text: ="Text"
+                Width: =164
+                X: =257
+                Y: =26
+                ZIndex: =3
+
+            Label10 As label:
+                Height: =72
+                Size: =21
+                Text: ="Text"
+                Width: =134
+                X: =432
+                Y: =18
+                ZIndex: =4
+
+    Label11 As label:
+        Height: =70
+        Size: =21
+        Text: ="可滚动的屏幕"
+        Width: =560
+        X: =51
+        Y: =75
+        ZIndex: =2
+

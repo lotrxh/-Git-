@@ -1,0 +1,49 @@
+SixScreen As screen:
+
+    "Gallery4 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Height: =641
+        Items: =["1","2","3","4"]
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(160, Self.Height - 60)
+        Width: =506
+        X: =12
+        ZIndex: =1
+
+        Separator3 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+        Label12 As label:
+            Height: =88
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: =ThisItem.Value
+            Width: =78
+            Y: =40
+            ZIndex: =6
+
+        Checkbox8 As checkbox:
+            Height: =53
+            OnCheck: =Collect(checkdata,ThisItem)
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: =""
+            Width: =160
+            X: =318
+            Y: =40
+            ZIndex: =7
+
+    Button3 As button:
+        Height: =70
+        OnSelect: =ClearCollect(SaveData,Gallery4.Selected.Checkbox8.Value)
+        Size: =24
+        Text: ="按钮"
+        Width: =280
+        X: =360
+        Y: =726
+        ZIndex: =2
+

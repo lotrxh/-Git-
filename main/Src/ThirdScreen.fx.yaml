@@ -1,0 +1,77 @@
+ThirdScreen As screen:
+    OnVisible: =ClearCollect(userdata,Office365组.ListOwnedGroupsV3().value.id)
+
+    Label5_1 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(109, 49, 162, 1)
+        Height: =94
+        Size: =21
+        Text: ="ThirdScreen"
+        Width: =640
+        ZIndex: =1
+
+    Icon3_1 As icon.Add:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =94
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(Home,ScreenTransition.Fade)
+        Width: =79
+        ZIndex: =2
+
+    Gallery2 As gallery.galleryVertical:
+        Height: =315
+        Layout: =Layout.Vertical
+        TemplateSize: =310
+        Width: =483
+        X: =111
+        Y: =198
+        ZIndex: =3
+
+        Label1 As label:
+            Height: =70
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: =
+            Width: =331
+            X: =3
+            Y: =15
+            ZIndex: =1
+
+    Button4 As button:
+        Height: =70
+        OnSelect: |-
+            =Set(Username1,"Table({name:'wangxuhui'})")
+        Size: =24
+        Text: ="add data"
+        Width: =280
+        Y: =128
+        ZIndex: =4
+
+    Dropdown1 As dropdown:
+        Height: =70
+        Items: =userdata
+        Size: =21
+        Width: =575
+        X: =19
+        Y: =578
+        ZIndex: =5
+
+    Dropdown2 As dropdown:
+        Height: =70
+        Items: =[""]
+        Size: =21
+        Width: =575
+        X: =19
+        Y: =712
+        ZIndex: =6
+
+    Label13 As label:
+        Height: =70
+        Size: =21
+        Text: =LookUp(JobApplication,Title="1c387a0a-fb60-404b-b08f-28218f4d999a",'JobName(China)')
+        Width: =560
+        X: =40
+        Y: =855
+        ZIndex: =7
+

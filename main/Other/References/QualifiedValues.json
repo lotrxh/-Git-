@@ -1,0 +1,32 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_new_poc_forms",
+      "Namespace": "POCS (窗体)",
+      "Values": {
+        "Information": "bb4d4486-a6f6-4bde-80ea-de37a4edd85d"
+      }
+    },
+    {
+      "Kind": "default.cds_crf5e_poeadmindb_forms",
+      "Namespace": "PoE AdminDBS (窗体)",
+      "Values": {
+        "Information": "ddd53a3d-9614-4a28-8f1c-b34c89d2322d"
+      }
+    },
+    {
+      "Kind": "default.cds_new_poc_forms",
+      "Namespace": "POCS (Forms)",
+      "Values": {
+        "Information": "bb4d4486-a6f6-4bde-80ea-de37a4edd85d"
+      }
+    },
+    {
+      "Kind": "default.cds_crf5e_poeadmindb_forms",
+      "Namespace": "PoE AdminDBS (Forms)",
+      "Values": {
+        "Information": "ddd53a3d-9614-4a28-8f1c-b34c89d2322d"
+      }
+    }
+  ]
+}

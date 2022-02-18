@@ -1,0 +1,249 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "crf5e_poeadmindbs",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "crf5e_poeadmindb",
+    "MaxGetRowsCount": 500,
+    "Name": "PoE AdminDBS",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "crf5e_aadppaidavailableunits": "AADPPaidAvailableUnits",
+      "crf5e_companyname": "CompanyName",
+      "crf5e_createddate": "CreatedDate",
+      "crf5e_currentdefaultdomain": "CurrentDefaultDomain",
+      "crf5e_curstatus": "CurStatus",
+      "crf5e_exopaidavailableunits": "EXOPaidAvailableUnits",
+      "crf5e_firstpaid": "Firstpaid",
+      "crf5e_isedu": "IsEDU",
+      "crf5e_isfreetrial": "IsFreeTrial",
+      "crf5e_ispast": "Ispast",
+      "crf5e_mau": "MAU",
+      "crf5e_maudate": "MauDate",
+      "crf5e_maudatetime": "MauDateTime",
+      "crf5e_mssalessubsegmentname": "MSSalesSubSegmentName",
+      "crf5e_mssalestopparentorgid": "MSSalesTopParentOrgId",
+      "crf5e_mssalestopparentorgname": "MSSalesTopParentOrgName",
+      "crf5e_name": "Name",
+      "crf5e_omstenantid": "OMSTenantId",
+      "crf5e_paidavailableunits": "PaidAvailableUnits",
+      "crf5e_poeadmindb_AsyncOperations": "System Jobs",
+      "crf5e_poeadmindb_BulkDeleteFailures": "Bulk Delete Failures",
+      "crf5e_PoEAdminDB_crf5e_PoEApprovalDB_crf5": "PoE ApprovalDBS",
+      "crf5e_poeadmindb_DuplicateBaseRecord": "Duplicate Records (crf5e_poeadmindb_DuplicateBaseRecord)",
+      "crf5e_poeadmindb_DuplicateMatchingRecord": "Duplicate Records (crf5e_poeadmindb_DuplicateMatchingRecord)",
+      "crf5e_poeadmindb_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "crf5e_poeadmindb_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "crf5e_poeadmindb_ProcessSession": "Process Sessions",
+      "crf5e_poeadmindb_SyncErrors": "Sync Errors",
+      "crf5e_poeadmindbid": "PoE AdminDB",
+      "crf5e_propluspaidavailableunits": "ProPlusPaidAvailableUnits",
+      "crf5e_rate": "Rate",
+      "crf5e_secondpaid": "Secondpaid",
+      "crf5e_spopaidavailableunits": "SPOPaidAvailableUnits",
+      "crf5e_tenantstatus": "TenantStatus",
+      "crf5e_workload": "Workload",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "new_aadpavailableseats": "AADPAvailableSeats",
+      "new_exoavailableseats": "EXOAvailableSeats",
+      "new_percentage_rate": "percentage_rate",
+      "new_proplusavailableseats": "ProPlusAvailableSeats",
+      "new_spoavailableseats": "SPOAvailableSeats",
+      "new_totalavailableseats": "TotalAvailableSeats",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "PoE AdminDBS",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "PoE AdminDBS (Views)",
+    "Name": "_crf5e_poeadmindb_views",
+    "RelatedEntityName": "PoE AdminDBS",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "054913f8-e839-4e5e-a4aa-4cd1d1f958d9": "PoE AdminDB Advanced Find View",
+      "0f4f4182-c89e-4e81-b827-6aba87898a73": "Active PoE AdminDBS",
+      "5c8dbe4c-1085-417d-b268-f88ae7267eec": "Inactive PoE AdminDBS",
+      "7b87b905-103e-4337-b7ca-eff27e4a5727": "PoE AdminDB Associated View",
+      "84a405c0-f696-490c-9a32-86a2b35fc6f6": "PoE AdminDB Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Firstpaid (PoE AdminDBS)",
+    "Name": "crf5e_crf5e_poeadmindb_firstpaid",
+    "OptionSetInfoNameMapping": {
+      "0": "False",
+      "1": "True"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "crf5e_firstpaid",
+        "OptionSetReferenceEntityName": "PoE AdminDBS"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "crf5e_firstpaid",
+    "RelatedEntityName": "PoE AdminDBS",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "IsEDU (PoE AdminDBS)",
+    "Name": "crf5e_crf5e_poeadmindb_isedu",
+    "OptionSetInfoNameMapping": {
+      "0": "false",
+      "1": "true"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "crf5e_isedu",
+        "OptionSetReferenceEntityName": "PoE AdminDBS"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "crf5e_isedu",
+    "RelatedEntityName": "PoE AdminDBS",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "IsFreeTrial (PoE AdminDBS)",
+    "Name": "crf5e_crf5e_poeadmindb_isfreetrial",
+    "OptionSetInfoNameMapping": {
+      "0": "false",
+      "1": "true"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "crf5e_isfreetrial",
+        "OptionSetReferenceEntityName": "PoE AdminDBS"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "crf5e_isfreetrial",
+    "RelatedEntityName": "PoE AdminDBS",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Ispast (PoE AdminDBS)",
+    "Name": "crf5e_crf5e_poeadmindb_ispast",
+    "OptionSetInfoNameMapping": {
+      "0": "False",
+      "1": "True"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "crf5e_ispast",
+        "OptionSetReferenceEntityName": "PoE AdminDBS"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "crf5e_ispast",
+    "RelatedEntityName": "PoE AdminDBS",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Secondpaid (PoE AdminDBS)",
+    "Name": "crf5e_crf5e_poeadmindb_secondpaid",
+    "OptionSetInfoNameMapping": {
+      "0": "False",
+      "1": "True"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "crf5e_secondpaid",
+        "OptionSetReferenceEntityName": "PoE AdminDBS"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "crf5e_secondpaid",
+    "RelatedEntityName": "PoE AdminDBS",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "CurStatus",
+    "Name": "crf5e_curstatus",
+    "OptionSetInfoNameMapping": {
+      "410210000": "Pending",
+      "410210001": "In Progress",
+      "410210002": "Completed"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "crf5e_curstatus",
+        "OptionSetReferenceEntityName": "PoE AdminDBS"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "crf5e_curstatus",
+    "RelatedEntityName": "PoE AdminDBS",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (PoE AdminDBS)",
+    "Name": "crf5e_poeadmindb_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "PoE AdminDBS"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "PoE AdminDBS",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (PoE AdminDBS)",
+    "Name": "crf5e_poeadmindb_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "PoE AdminDBS"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "PoE AdminDBS",
+    "Type": "OptionSetInfo"
+  }
+]

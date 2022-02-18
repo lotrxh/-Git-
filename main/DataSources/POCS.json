@@ -1,0 +1,107 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "new_pocs",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "new_poc",
+    "MaxGetRowsCount": 500,
+    "Name": "POCS",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr031_pocautoid": "POCAutoId",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "new_address": "Name",
+      "new_Attendance_POC_Name_new_POC": "Attendances",
+      "new_BW_Activity_Activity_Address_new_POC": "BW_Activities",
+      "new_BW_Task_POC_Name_new_POC": "BW_Tasks (new_BW_Task_POC_Name_new_POC)",
+      "new_BW_Task_TASK_Address_new_POC": "BW_Tasks (new_BW_Task_TASK_Address_new_POC)",
+      "new_latitude": "Latitude",
+      "new_longitude": "Longitude",
+      "new_name": "Address",
+      "new_poc_AsyncOperations": "System Jobs",
+      "new_poc_BulkDeleteFailures": "Bulk Delete Failures",
+      "new_poc_DuplicateBaseRecord": "Duplicate Records (new_poc_DuplicateBaseRecord)",
+      "new_poc_DuplicateMatchingRecord": "Duplicate Records (new_poc_DuplicateMatchingRecord)",
+      "new_poc_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "new_poc_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "new_poc_ProcessSession": "Process Sessions",
+      "new_poc_SyncErrors": "Sync Errors",
+      "new_pocid": "POC",
+      "new_Scheduling_Address_new_POC": "Schedulings (new_Scheduling_Address_new_POC)",
+      "new_Scheduling_POC_Address_new_POC": "Schedulings (new_Scheduling_POC_Address_new_POC)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "POCS",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "POCS (视图)",
+    "Name": "_new_poc_views",
+    "RelatedEntityName": "POCS",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "16db3edd-e530-452e-8c43-aa0fd8321f1c": "POC Lookup View",
+      "39a5ea5b-4715-48d3-9839-09984ca0285e": "POC Advanced Find View",
+      "7886cd61-eba9-4ac7-80f1-ee36bbc8e4d1": "Active POCS",
+      "dea9c1a3-7288-44a7-820b-4c290dd108ad": "POC Associated View",
+      "fb02fa4a-f12c-422a-94c1-9cb0b642383f": "Inactive POCS"
+    }
+  },
+  {
+    "DisplayName": "Status (POCS)",
+    "Name": "new_poc_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "POCS"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "POCS",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (POCS)",
+    "Name": "new_poc_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "POCS"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "POCS",
+    "Type": "OptionSetInfo"
+  }
+]
