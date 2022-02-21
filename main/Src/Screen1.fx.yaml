@@ -43,7 +43,7 @@ Screen1 As screen:
         ZIndex: =4
 
     HtmlText1 As htmlViewer:
-        Height: =339
+        Height: =215
         HtmlText: |-
             =Concat(ApplitionJobPosition,If(1=1,"<div color:red>"&Unit_Address&"</div>",Post),"")
         Width: =640
@@ -53,7 +53,7 @@ Screen1 As screen:
     Label16 As label:
         Height: =70
         Size: =21
-        Text: ="text"
+        Text: ="1111111"
         Width: =560
         X: =56
         Y: =928
