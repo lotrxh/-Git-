@@ -53,9 +53,9 @@ Screen1 As screen:
     Label16 As label:
         Height: =70
         Size: =21
-        Text: ="文本"
+        Text: ="text"
         Width: =560
-        X: =60
-        Y: =60
+        X: =56
+        Y: =928
         ZIndex: =6
 
