@@ -20,6 +20,32 @@
     "dependents": [],
     "id": "5bf6f602-ad5a-4f55-b740-b73927eb8901"
   },
+  "660d9b5f-f4b9-4806-8735-c036a41b7698": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/8e989e73ea934dcba88ebb4dabc4782e",
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1550/1.0.1550.2686/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://chinasofti0.sharepoint.com/sites/eProcessingSystemEPS": {
+        "dataSources": {
+          "ApplitionJobPosition": {
+            "tableName": "1eab5b7e-65ac-48d6-b746-f2c8c0c6c0b9"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "ApplitionJobPosition"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "660d9b5f-f4b9-4806-8735-c036a41b7698"
+  },
   "734cec5f-77a5-4293-b12c-f31f71c7bb5f": {
     "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/2fa5a97b764d468d877b95b691098bc8",
     "connectionParameters": {

@@ -1,12 +1,12 @@
 SixScreen As screen:
 
     "Gallery4 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
-        Height: =641
+        Height: =688
         Items: =["1","2","3","4"]
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =Min(160, Self.Height - 60)
-        Width: =506
+        Width: =628
         X: =12
         ZIndex: =1
 
