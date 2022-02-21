@@ -50,3 +50,12 @@ Screen1 As screen:
         Y: =687
         ZIndex: =5
 
+    Label16 As label:
+        Height: =70
+        Size: =21
+        Text: ="文本"
+        Width: =560
+        X: =60
+        Y: =60
+        ZIndex: =6
+
