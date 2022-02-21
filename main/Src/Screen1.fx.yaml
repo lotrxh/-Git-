@@ -42,3 +42,12 @@ Screen1 As screen:
         Y: =176
         ZIndex: =4
 
+    HtmlText1 As htmlViewer:
+        Height: =235
+        HtmlText: |-
+            =Concat(JobApplication,If(1=1,"<div color:red>"&Post&"</div>",Post),"")
+        Width: =560
+        X: =40
+        Y: =687
+        ZIndex: =5
+
