@@ -55,7 +55,16 @@ Screen1 As screen:
         Size: =21
         Text: ="ceshicehsi"
         Width: =560
-        X: =39
-        Y: =928
+        X: =15
+        Y: =902
         ZIndex: =6
+
+    Button9 As button:
+        Height: =70
+        Size: =24
+        Text: ="按钮"
+        Width: =280
+        X: =40
+        Y: =1016
+        ZIndex: =7
 
