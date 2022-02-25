@@ -2,10 +2,19 @@ Screen2 As screen:
 
     PowerBI1 As powerbi:
         DashboardId: ="fa710bc1-0f68-4c49-9e1d-4723e39cd98d"
-        Height: =620
+        Height: =346
         TileUrl: |-
             ="https://app.powerbi.com/embed?dashboardId=fa710bc1-0f68-4c49-9e1d-4723e39cd98d&tileId=a01cd0dc-98ce-4f82-baa6-3b856cdd6fd2&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLVNPVVRILUVBU1QtQVNJQS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
         WorkspaceId: ="__my-workspace"
         Y: =40
         ZIndex: =1
+
+    PowerBI3 As powerbi:
+        DashboardId: ="fa710bc1-0f68-4c49-9e1d-4723e39cd98d"
+        Height: =470
+        TileUrl: |-
+            ="https://app.powerbi.com/embed?dashboardId=fa710bc1-0f68-4c49-9e1d-4723e39cd98d&tileId=2b1717dd-2d70-49a9-8cc0-861a40afb737&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLVNPVVRILUVBU1QtQVNJQS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
+        WorkspaceId: ="__my-workspace"
+        Y: =441
+        ZIndex: =2
 
