@@ -27,6 +27,7 @@
       "enableappembeddingux": false,
       "enablecomponentnamemaps": true,
       "enablecomponentscopeoldbehavior": true,
+      "enableeditcacherefreshfrequency": false,
       "enableexcelonlinebusinessv2connector": false,
       "enableideaspanel": false,
       "enableonstart": true,
@@ -102,7 +103,6 @@
     "FiveScreen",
     "SixScreen",
     "SevenScreen",
-    "Home_1",
     "Screen1",
     "Screen2"
   ]
