@@ -1,4 +1,5 @@
 App As appinfo:
-    BackEnabled: =false
-    OnStart: =Set(Username,))
+    BackEnabled: =true
+    ConfirmExit: =true
+    OnStart: =//Set(Username,))
 

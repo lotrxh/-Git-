@@ -4,9 +4,23 @@
     "ControlPropertyState": [
       "MinScreenHeight",
       "MinScreenWidth",
-      "ConfirmExit",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "ConfirmExit",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "SizeBreakpoints",
-      "BackEnabled",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "BackEnabled",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       {
         "AFDDataSourceName": "",
         "AutoRuleBindingEnabled": false,
