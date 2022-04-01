@@ -6,7 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "new_poc",
-    "MaxGetRowsCount": 500,
+    "MaxGetRowsCount": 1,
     "Name": "POCS",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",

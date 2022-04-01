@@ -6,7 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "crf5e_poeadmindb",
-    "MaxGetRowsCount": 500,
+    "MaxGetRowsCount": 1,
     "Name": "PoE AdminDBS",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
