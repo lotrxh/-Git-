@@ -1,0 +1,300 @@
+CmpPagingControl As CanvasComponent:
+    DataListInput: =Table({})
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =40
+    IsNotRefresh: =true
+    IterItemOutput: =Min(CountRows(CmpPagingControl.DataListInput), iterItem)
+    LabGo: ="Go"
+    LabJumpTo: ="Jump To"
+    OnReset: |-
+        =If(CmpPagingControl.ResetProperty,Reset(DrpListData_PageSize_5););
+        
+        If(
+            CmpPagingControl.IsNotRefresh,
+        Set(iterItem,Int(DrpListData_PageSize_5.Selected.Value));
+        Set(currentPage,iterItem / DrpListData_PageSize_5.Selected.Value));
+    PageSizeOutput: |-
+        =With(
+            {Size: DrpListData_PageSize_5.Selected.Value},
+            If(
+                iterItem > CountRows(CmpPagingControl.DataListInput),
+                Size - (iterItem - CountRows(CmpPagingControl.DataListInput)),
+                Size
+            )
+        )
+    ResetProperty: =true
+    Width: =1066
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    BtnNext_5 As button:
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =1
+        Color: =White
+        Fill: =RGBA(0, 169, 224, 1)
+        FocusedBorderThickness: =1
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Normal
+        Height: =32
+        HoverFill: =ColorFade(Self.Fill, -15%)
+        OnSelect: |-
+            =If(
+                iterItem < CountRows(CmpPagingControl.DataListInput),
+                Set(
+                    iterItem,
+                    If(
+                        iterItem < CountRows(CmpPagingControl.DataListInput),
+                        iterItem + DrpListData_PageSize_5.Selected.Value
+                    )
+                );
+                Set(
+                    currentPage,
+                    iterItem / DrpListData_PageSize_5.Selected.Value
+                );
+                
+            )
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedColor: =White
+        PressedFill: =ColorFade(Self.Fill, -25%)
+        RadiusBottomLeft: =2
+        RadiusBottomRight: =2
+        RadiusTopLeft: =2
+        RadiusTopRight: =2
+        Size: =10.5
+        Text: =">"
+        Width: =32
+        X: =415
+        Y: =4
+        ZIndex: =1
+
+    BtnPrev_5 As button:
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =1
+        Color: =White
+        Fill: =RGBA(0, 169, 224, 1)
+        FocusedBorderThickness: =1
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Normal
+        Height: =32
+        HoverFill: =ColorFade(Self.Fill, -15%)
+        OnSelect: |-
+            =If(
+                iterItem =Int(DrpListData_PageSize_5.Selected.Value),
+                false,
+                Set(iterItem,iterItem - DrpListData_PageSize_5.Selected.Value);
+                Set(currentPage,iterItem / DrpListData_PageSize_5.Selected.Value);
+            )
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedColor: =White
+        PressedFill: =ColorFade(Self.Fill, -25%)
+        RadiusBottomLeft: =2
+        RadiusBottomRight: =2
+        RadiusTopLeft: =2
+        RadiusTopRight: =2
+        Size: =10.5
+        Text: ="<"
+        Width: =32
+        X: =298
+        Y: =4
+        ZIndex: =2
+
+    LabPageNo_5 As label:
+        Font: =Font.Arial
+        Height: =32
+        PaddingBottom: =0
+        PaddingLeft: =12
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =10.5
+        Text: =CmpPagingControl.LabJumpTo
+        Width: =65
+        X: =621
+        Y: =4
+        ZIndex: =3
+
+    TxtListData_Curent_5 As text:
+        BorderColor: =RGBA(0, 0, 0, 0.25)
+        BorderThickness: =1
+        Default: =currentPage//iterItem / DrpListData_PageSize.Selected.Value
+        DisabledColor: =RGBA(0, 0, 0, 1)
+        FocusedBorderColor: =RGBA(0, 0, 0, 1)
+        FocusedBorderThickness: =1
+        Font: =Font.Arial
+        Height: =32
+        HintText: ="1"
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PaddingBottom: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =RGBA(0, 0, 0, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =10.5
+        Width: =50
+        X: =686
+        Y: =4
+        ZIndex: =4
+
+    TxtListData_Total_5 As text:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        Default: |-
+            =RoundUp(
+                CountRows(CmpPagingControl.DataListInput) / DrpListData_PageSize_5.Selected.Value,
+                0
+            )
+        DisplayMode: =DisplayMode.View
+        FocusedBorderColor: =RGBA(0, 0, 0, 1)
+        FocusedBorderThickness: =1
+        Font: =Font.Arial
+        Height: =32
+        HintText: ="0"
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(0, 0, 0, 1)
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =RGBA(0, 0, 0, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =10.5
+        Width: =32
+        X: =380
+        Y: =4
+        ZIndex: =5
+
+    TxtLabSign_5 As label:
+        Color: =RGBA(0, 0, 0, 0.86)
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Semibold
+        Height: =32
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =10.5
+        Text: ="/"
+        Width: =32
+        X: =370
+        Y: =4
+        ZIndex: =6
+
+    DrpListData_PageSize_5 As dropdown:
+        BorderColor: =RGBA(161, 159, 157, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(255, 255, 255, 1)
+        ChevronDisabledBackground: =RGBA(230, 230, 230, 1)
+        ChevronFill: =RGBA(161, 159, 157, 1)
+        ChevronHoverBackground: =RGBA(243, 242, 241, 1)
+        ChevronHoverFill: =RGBA(182, 182, 182, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(255, 255, 255, 1)
+        FocusedBorderThickness: =1
+        Font: =Font.Arial
+        Height: =32
+        HoverBorderColor: =RGBA(96, 94, 92, 1)
+        HoverFill: =RGBA(237, 235, 233, 1)
+        Items: =[10,50,100]
+        OnChange: |-
+            =Set(iterItem,Int(DrpListData_PageSize_5.Selected.Value));
+            Set(currentPage,iterItem / DrpListData_PageSize_5.Selected.Value);
+        OnSelect: |
+            =Set(iterItem,Int(DrpListData_PageSize_5.Selected.Value));
+            Set(currentPage,iterItem / DrpListData_PageSize_5.Selected.Value);
+        PaddingLeft: =20
+        PaddingRight: =0
+        PressedBorderColor: =RGBA(166, 166, 166, 1)
+        PressedColor: =RGBA(0, 0, 0, 1)
+        PressedFill: =Self.BorderColor
+        SelectionFill: =RGBA(0, 76, 151, 1)
+        Size: =10.5
+        Width: =120
+        X: =473
+        Y: =4
+        ZIndex: =7
+
+    BtnGo_5 As button:
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =1
+        Color: =White
+        Fill: =RGBA(0, 169, 224, 1)
+        FocusedBorderThickness: =1
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Normal
+        Height: =32
+        HoverFill: =ColorFade(Self.Fill, -15%)
+        OnSelect: |-
+            =Set(
+                iterItem,
+                If(
+                    Int(TxtListData_Curent_5.Text) > Int(TxtListData_Total_5.Text),
+                    TxtListData_Total_5.Text * Int(DrpListData_PageSize_5.Selected.Value),
+                    Int(TxtListData_Curent_5.Text) < 1,
+                    Int(DrpListData_PageSize_5.Selected.Value),
+                    Int(TxtListData_Curent_5.Text) * Int(DrpListData_PageSize_5.Selected.Value)
+                )
+            );
+            Set(currentPage,iterItem / DrpListData_PageSize_5.Selected.Value);
+            Reset(TxtListData_Curent_5);
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedColor: =White
+        PressedFill: =ColorFade(Self.Fill, -25%)
+        RadiusBottomLeft: =2
+        RadiusBottomRight: =2
+        RadiusTopLeft: =2
+        RadiusTopRight: =2
+        Size: =10.5
+        Text: =CmpPagingControl.LabGo
+        Width: =32
+        X: =748
+        Y: =4
+        ZIndex: =8
+
+    LabListData_Curent_5 As text:
+        Align: =Align.Right
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        Color: =RGBA(0, 169, 224, 1)
+        Default: |-
+            =currentPage
+            //iterItem / DrpListData_PageSize.Selected.Value
+        DisplayMode: =DisplayMode.View
+        FocusedBorderColor: =RGBA(0, 0, 0, 1)
+        FocusedBorderThickness: =1
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Semibold
+        Height: =32
+        HintText: ="0"
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(0, 0, 0, 1)
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =RGBA(0, 0, 0, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =10.5
+        Width: =32
+        X: =333
+        Y: =4
+        ZIndex: =9
+

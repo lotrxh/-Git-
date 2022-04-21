@@ -1,0 +1,92 @@
+{
+  "ComponentAllowCustomization": true,
+  "ComponentChangedSinceFileImport": true,
+  "ComponentManifest": {
+    "AllowAccessToGlobals": false,
+    "AllowCustomization": true,
+    "Description": "",
+    "Name": "CmpPagingControl",
+    "TemplateGuid": "fc00fa2d07584808b1e64f7acc3eb723"
+  },
+  "ComponentType": "CanvasComponent",
+  "CustomGroupControlTemplateName": "",
+  "CustomProperties": [
+    {
+      "Category": 0,
+      "DisplayName": "DataListInput",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "DataListInput",
+      "PropertyDataTypeKey": "Table",
+      "Tooltip": "入参Table",
+      "Type": "{\"Version\":\"1.323\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Table\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "ResetProperty",
+      "Hidden": false,
+      "Name": "ResetProperty",
+      "PropertyDataTypeKey": "Boolean",
+      "Tooltip": "是否Reset控件",
+      "Type": "{\"Version\":\"1.323\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "LabJumpTo",
+      "Hidden": false,
+      "Name": "LabJumpTo",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "JumpTo语言翻译",
+      "Type": "{\"Version\":\"1.323\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "LabGo",
+      "Hidden": false,
+      "Name": "LabGo",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "Go语言翻译",
+      "Type": "{\"Version\":\"1.323\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IsNotRefresh",
+      "Hidden": false,
+      "Name": "IsNotRefresh",
+      "PropertyDataTypeKey": "Boolean",
+      "Tooltip": "是否刷新数据",
+      "Type": "{\"Version\":\"1.323\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IterItemOutput",
+      "Hidden": true,
+      "Name": "IterItemOutput",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.323\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "PageSizeOutput",
+      "Hidden": true,
+      "Name": "PageSizeOutput",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.323\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    }
+  ],
+  "FirstParty": true,
+  "Id": "http://microsoft.com/appmagic/Component",
+  "IsComponentLocked": false,
+  "IsComponentTemplate": true,
+  "IsCustomGroupControlTemplate": false,
+  "IsPcfControl": false,
+  "IsPremiumPcfControl": false,
+  "IsWidgetTemplate": false,
+  "LastModifiedTimestamp": "637861165957568084",
+  "Name": "fc00fa2d07584808b1e64f7acc3eb723",
+  "OverridableProperties": {},
+  "TemplateOriginalName": "94291046475e4ca1b831df84a864c33b",
+  "Version": "637860186608543459"
+}

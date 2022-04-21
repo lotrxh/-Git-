@@ -10,6 +10,7 @@ FirstScreen As screen:
         ZIndex: =1
 
     Form1 As form:
+        AcceptsFocus: =false
         DataSource: =POCS
         DefaultMode: =If(bustype="View",FormMode.View,FormMode.Edit)
         Height: =826

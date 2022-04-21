@@ -35,6 +35,7 @@
       "Editor#Claims": "Modified By Claims",
       "ID": "ID",
       "Modified": "Modified",
+      "Nid": "Nid",
       "O_Mechanism": "O_Mechanism",
       "O_Mechanism_No": "O_Mechanism_No",
       "O_Mechanism_Type": "O_Mechanism_Type",
