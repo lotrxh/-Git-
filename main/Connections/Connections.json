@@ -1,6 +1,5 @@
 {
   "5bf6f602-ad5a-4f55-b740-b73927eb8901": {
-    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_powerappsforappmakers/connections/8bed627046c34299bfeacb187204f65a",
     "connectionParameters": {
       "sku": "Enterprise"
     },
@@ -21,7 +20,6 @@
     "id": "5bf6f602-ad5a-4f55-b740-b73927eb8901"
   },
   "660d9b5f-f4b9-4806-8735-c036a41b7698": {
-    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/8e989e73ea934dcba88ebb4dabc4782e",
     "connectionParameters": {
       "sku": "Enterprise"
     },
@@ -47,7 +45,6 @@
     "id": "660d9b5f-f4b9-4806-8735-c036a41b7698"
   },
   "734cec5f-77a5-4293-b12c-f31f71c7bb5f": {
-    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/2fa5a97b764d468d877b95b691098bc8",
     "connectionParameters": {
       "sku": "Enterprise"
     },
@@ -92,7 +89,6 @@
     "id": "734cec5f-77a5-4293-b12c-f31f71c7bb5f"
   },
   "76e475ec-74ae-423b-bd9c-fcd304a64977": {
-    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_powerappsforadmins/connections/e00d2ed7a10f438e9d47604f10fe85fa",
     "connectionParameters": {
       "sku": "Enterprise"
     },
@@ -113,7 +109,6 @@
     "id": "76e475ec-74ae-423b-bd9c-fcd304a64977"
   },
   "7e718ee1-a54b-4a58-b143-e715a30d24ba": {
-    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_office365groups/connections/3a1ea675892047febf4647f21f48589e",
     "connectionParameters": {
       "sku": "Enterprise"
     },
@@ -134,7 +129,6 @@
     "id": "7e718ee1-a54b-4a58-b143-e715a30d24ba"
   },
   "bcab6d34-3c64-4f94-857f-c560f1c8cd96": {
-    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/a2d4fe964d254b1dbdb51f82a7a06855",
     "connectionParameters": {
       "sku": "Enterprise"
     },
